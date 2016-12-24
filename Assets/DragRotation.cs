@@ -9,7 +9,8 @@ public class DragRotation : MonoBehaviour {
 	public Vector3 mouseInput;
 	Quaternion rotation;
 	[SerializeField]
-	private float speed;
+	private int speed;
+	private float velocity;
 	private float mousePosX;
 	private bool clickLeft;
 	private bool clickRight;
@@ -22,31 +23,23 @@ public class DragRotation : MonoBehaviour {
 		rotation = this.transform.rotation;
 		mouseInput = Input.mousePosition;
 		mousePosX = mouseInput.x;
-		speed += Time.deltaTime *speed;
-		character.transform.localRotation = Quaternion.Euler (character.transform.position.x, speed, character.transform.position.z);
-		//print (rotation.y);
-		//print (speed);
-		/*if (clickRight) {
-			//character.transform.localRotation = Quaternion.Euler (0, mousePosX - speed, 0);
-			rotation.y += speed;
-			this.transform.rotation = rotation;
+		//velocity += Time.deltaTime * speed;
+		if (Input.GetKey (KeyCode.J)) {
+			velocity += Time.deltaTime * speed;
+			character.transform.localRotation = Quaternion.Euler (character.transform.position.x, velocity, character.transform.position.z);
 		}
-		if (clickLeft) {
-			//character.transform.localRotation = Quaternion.Euler (0, speed, 0);
-			rotation.y -= speed;
-			this.transform.rotation = rotation;
-		}*/
+		if (Input.GetKey (KeyCode.K)) {
+			velocity -= Time.deltaTime * speed;
+			character.transform.localRotation = Quaternion.Euler (character.transform.position.x, velocity, character.transform.position.z);
+		}
 		if (Input.GetMouseButton (0)) {
 			DragRotator ();
 		}
 	}
 	void DragRotator(){
-		character.transform.localRotation = Quaternion.Euler (0, mousePosX, 0);
-	}
-	public void OnClickLeft(){
-		clickLeft = true;
-	}
-	public void OnClickRight(){
-		clickRight = true;
+		if (!clickLeft && !clickRight) {
+			character.transform.localRotation = Quaternion.Euler (0, mousePosX, 0);
+			velocity = mousePosX;
+		}
 	}
 }
