@@ -6,20 +6,21 @@ using UnityEngine;
 public class HairstyleController : MonoBehaviour {
 	[SerializeField]
 	private List<GameObject> hairstyles = new List<GameObject>();
-	public BoxCollider _col;
+	public BoxCollider headCollider;
+	public BoxCollider handCollider;
 	private int currentPosList;
 	public GameObject hairstyleInst;
 	private GameObject curHair;
 
 
 	void Start () {
-		curHair = Instantiate (hairstyles [currentPosList], _col.transform.position, Quaternion.identity) as GameObject;
+		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
 	}
 	
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.RightArrow)) {
 			Destroy (curHair);
-			curHair = Instantiate (hairstyles [currentPosList], _col.transform.position, Quaternion.identity) as GameObject;
+			curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
 			currentPosList += 1;
 		}
 		if (currentPosList >= hairstyles.Count) {
@@ -27,7 +28,7 @@ public class HairstyleController : MonoBehaviour {
 		}
 		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
 			Destroy (curHair);
-			curHair = Instantiate (hairstyles [currentPosList], _col.transform.position, Quaternion.identity) as GameObject;
+			curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
 			currentPosList -= 1;
 			if (currentPosList < 0) {
 				currentPosList = hairstyles.Count - 1;
