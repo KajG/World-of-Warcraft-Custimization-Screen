@@ -15,12 +15,15 @@ public class HairstyleController : MonoBehaviour {
 
 	void Start () {
 		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
+		curHair.transform.parent = headCollider.transform;
 	}
 	
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.RightArrow)) {
 			Destroy (curHair);
 			curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
+			curHair.transform.parent = headCollider.transform;
+
 			currentPosList += 1;
 		}
 		if (currentPosList >= hairstyles.Count) {
@@ -29,6 +32,7 @@ public class HairstyleController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
 			Destroy (curHair);
 			curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
+			curHair.transform.parent = headCollider.transform;
 			currentPosList -= 1;
 			if (currentPosList < 0) {
 				currentPosList = hairstyles.Count - 1;
