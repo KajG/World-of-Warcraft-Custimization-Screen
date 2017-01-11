@@ -10,7 +10,7 @@ public class DragRotation : MonoBehaviour {
 	Quaternion rotation;
 	[SerializeField]
 	private int speed;
-	private float velocity;
+	public float velocity;
 	private float mousePosX;
 	private bool clickLeft;
 	private bool clickRight;
