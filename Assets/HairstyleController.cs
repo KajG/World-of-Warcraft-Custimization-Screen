@@ -12,7 +12,6 @@ public class HairstyleController : MonoBehaviour {
 	public GameObject hairstyleInst;
 	private GameObject curHair;
 
-
 	void Start () {
 		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
 		curHair.transform.parent = headCollider.transform;
@@ -54,11 +53,6 @@ public class HairstyleController : MonoBehaviour {
 		default:
 			break;
 		}
-
-
-
-
-
 	}
 	void SpawnHair(){
 		Destroy (curHair);
