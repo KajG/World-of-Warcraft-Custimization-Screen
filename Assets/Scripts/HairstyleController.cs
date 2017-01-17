@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class HairstyleController : MonoBehaviour {
 	[SerializeField]
-	private List<GameObject> hairstyles = new List<GameObject>();
+	public List<GameObject> hairstyles = new List<GameObject>();
 	public BoxCollider headCollider;
 	public BoxCollider handCollider;
-	private int currentPosList;
+	public int currentPosList;
 	public GameObject hairstyleInst;
-	private GameObject curHair;
+	public GameObject curHair;
 
 	void Start () {
 		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
@@ -17,19 +17,17 @@ public class HairstyleController : MonoBehaviour {
 	
 	void Update () {
 		curHair.transform.rotation = headCollider.transform.rotation;
-		if (Input.GetKeyDown (KeyCode.UpArrow)) {
-			SpawnHair ();
-			currentPosList += 1;
-		}
-		if (currentPosList >= hairstyles.Count - 1) {
+		if (currentPosList >= 0) {
+			if (Input.GetKeyDown (KeyCode.UpArrow)) {
+				SpawnHair ();
+				currentPosList += 1;
+			}
+			if (Input.GetKeyDown (KeyCode.DownArrow)) {
+				SpawnHair ();
+				currentPosList -= 1;
+			}
+		} else {
 			currentPosList = 0;
-		}
-		if (Input.GetKeyDown (KeyCode.DownArrow)) {
-			SpawnHair ();
-			currentPosList -= 1;
-		}
-		if (currentPosList < 0) {
-			currentPosList = hairstyles.Count - 1;
 		}
 	}
 	public void OnClick(int position){
@@ -52,7 +50,7 @@ public class HairstyleController : MonoBehaviour {
 			break;
 		}
 	}
-	void SpawnHair(){
+	public void SpawnHair(){
 		Destroy (curHair);
 		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
 	}
