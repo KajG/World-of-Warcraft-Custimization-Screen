@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour {
 
-	public Color yourcolor;
+	public Color red;
+	public Color blue;
 	private Renderer hairColor;
 	public HairstyleController Hairstylecontroller;
 	private int posList;
@@ -20,9 +21,22 @@ public class ColorChange : MonoBehaviour {
 		hairColor = therealdeal.GetComponent<Renderer> ();
 	}
 		
-	public void OnClick(){
-		therealdeal.GetComponent<Renderer>().material.color = yourcolor;
-		Hairstylecontroller.SpawnHair ();
+	public void OnClick(int number){
+		switch (number) {
+		case 0:
+			therealdeal.GetComponent<Renderer> ().material.color = red;
+			SpawnHair ();
+			break;
+		case 1:
+			therealdeal.GetComponent<Renderer> ().material.color = blue;
+			SpawnHair ();
+			break;
+		default:
+			break;
+		}
 	}
 
+	void SpawnHair(){
+		Hairstylecontroller.SpawnHair ();
+	}
 }

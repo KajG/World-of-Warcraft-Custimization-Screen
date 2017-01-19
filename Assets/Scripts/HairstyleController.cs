@@ -10,7 +10,8 @@ public class HairstyleController : MonoBehaviour {
 	public int currentPosList;
 	public GameObject hairstyleInst;
 	public GameObject curHair;
-	private float headPosY;
+	[SerializeField]
+	private float headPosX;
 
 	void Start () {
 		curHair = Instantiate (hairstyles [currentPosList], headCollider.center, Quaternion.identity) as GameObject;
@@ -18,8 +19,7 @@ public class HairstyleController : MonoBehaviour {
 	
 	void Update () {
 		curHair.transform.rotation = headCollider.transform.rotation;
-		headPosY = headCollider.transform.localPosition.y;
-		curHair.transform.position = new Vector3(headCollider.center.x, headCollider.center.y + headPosY, headCollider.center.z);
+		curHair.transform.position = new Vector3(headCollider.center.x, headCollider.center.y + 0.02f, headCollider.center.z);
 		print (headCollider.transform.localPosition.y);
 
 		if (currentPosList >= 0) {
