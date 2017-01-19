@@ -6,6 +6,11 @@ public class ColorChange : MonoBehaviour {
 
 	public Color red;
 	public Color blue;
+	public Color blonde;
+	public Color cyan;
+	public Color brown;
+	public Color purple;
+	public Color pink;
 	private Renderer hairColor;
 	public HairstyleController Hairstylecontroller;
 	private int posList;
@@ -29,6 +34,26 @@ public class ColorChange : MonoBehaviour {
 			break;
 		case 1:
 			therealdeal.GetComponent<Renderer> ().material.color = blue;
+			SpawnHair ();
+			break;
+		case 2:
+			therealdeal.GetComponent<Renderer> ().material.color = blonde;
+			SpawnHair ();
+			break;
+		case 3:
+			therealdeal.GetComponent<Renderer> ().material.color = cyan;
+			SpawnHair ();
+			break;
+		case 4:
+			therealdeal.GetComponent<Renderer> ().material.color = brown;
+			SpawnHair ();
+			break;
+		case 5:
+			therealdeal.GetComponent<Renderer> ().material.color = purple;
+			SpawnHair ();
+			break;
+		case 6:
+			therealdeal.GetComponent<Renderer> ().material.color = pink;
 			SpawnHair ();
 			break;
 		default:

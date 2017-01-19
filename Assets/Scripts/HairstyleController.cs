@@ -37,7 +37,6 @@ public class HairstyleController : MonoBehaviour {
 	}
 	public void OnClick(int position){
 		switch (position) {
-
 		case 0:
 			currentPosList = 0;
 			SpawnHair ();

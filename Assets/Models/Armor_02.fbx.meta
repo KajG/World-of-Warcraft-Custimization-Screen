@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 27884507909b167498e7b0c56ce1ca8e
+timeCreated: 1484829513
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: armarmor
+    100002: armarmor1
+    100004: //RootNode
+    100006: dianamnt
+    100008: dianamnt 1
+    100010: group2
+    100012: group2 1
+    100014: pCube1
+    100016: pCube1 1
+    100018: pCylinder1
+    100020: pCylinder1 1
+    100022: pPlane14
+    100024: pPlane15
+    100026: pPyramid1
+    100028: pPyramid1 1
+    100030: pPyramid10
+    100032: pPyramid10 1
+    100034: pPyramid11
+    100036: pPyramid11 1
+    100038: pPyramid12
+    100040: pPyramid12 1
+    100042: pPyramid13
+    100044: pPyramid13 1
+    100046: pPyramid14
+    100048: pPyramid14 1
+    100050: pPyramid2
+    100052: pPyramid2 1
+    100054: pPyramid4
+    100056: pPyramid4 1
+    100058: pPyramid8
+    100060: pPyramid8 1
+    100062: pPyramid9
+    100064: pPyramid9 1
+    100066: pSphere2
+    100068: pSphere2 1
+    100070: pSphere3
+    100072: rok
+    100074: schouderarmor_L
+    100076: schouderarmor_R
+    100078: transform1
+    100080: transform1 1
+    100082: transform2
+    100084: transform2 1
+    100086: transform5
+    100088: transform5 1
+    100090: transform6
+    100092: transform6 1
+    400000: armarmor
+    400002: armarmor1
+    400004: //RootNode
+    400006: dianamnt
+    400008: dianamnt 1
+    400010: group2
+    400012: group2 1
+    400014: pCube1
+    400016: pCube1 1
+    400018: pCylinder1
+    400020: pCylinder1 1
+    400022: pPlane14
+    400024: pPlane15
+    400026: pPyramid1
+    400028: pPyramid1 1
+    400030: pPyramid10
+    400032: pPyramid10 1
+    400034: pPyramid11
+    400036: pPyramid11 1
+    400038: pPyramid12
+    400040: pPyramid12 1
+    400042: pPyramid13
+    400044: pPyramid13 1
+    400046: pPyramid14
+    400048: pPyramid14 1
+    400050: pPyramid2
+    400052: pPyramid2 1
+    400054: pPyramid4
+    400056: pPyramid4 1
+    400058: pPyramid8
+    400060: pPyramid8 1
+    400062: pPyramid9
+    400064: pPyramid9 1
+    400066: pSphere2
+    400068: pSphere2 1
+    400070: pSphere3
+    400072: rok
+    400074: schouderarmor_L
+    400076: schouderarmor_R
+    400078: transform1
+    400080: transform1 1
+    400082: transform2
+    400084: transform2 1
+    400086: transform5
+    400088: transform5 1
+    400090: transform6
+    400092: transform6 1
+    2300000: dianamnt
+    2300002: dianamnt 1
+    2300004: pCube1
+    2300006: pCube1 1
+    2300008: pCylinder1
+    2300010: pCylinder1 1
+    2300012: pPlane14
+    2300014: pPlane15
+    2300016: pPyramid11
+    2300018: pPyramid11 1
+    2300020: pPyramid12
+    2300022: pPyramid12 1
+    2300024: pPyramid13
+    2300026: pPyramid13 1
+    2300028: pPyramid14
+    2300030: pPyramid14 1
+    2300032: pPyramid4
+    2300034: pPyramid4 1
+    2300036: pPyramid8
+    2300038: pPyramid8 1
+    2300040: pSphere2
+    2300042: pSphere2 1
+    2300044: pSphere3
+    3300000: dianamnt
+    3300002: dianamnt 1
+    3300004: pCube1
+    3300006: pCube1 1
+    3300008: pCylinder1
+    3300010: pCylinder1 1
+    3300012: pPlane14
+    3300014: pPlane15
+    3300016: pPyramid11
+    3300018: pPyramid11 1
+    3300020: pPyramid12
+    3300022: pPyramid12 1
+    3300024: pPyramid13
+    3300026: pPyramid13 1
+    3300028: pPyramid14
+    3300030: pPyramid14 1
+    3300032: pPyramid4
+    3300034: pPyramid4 1
+    3300036: pPyramid8
+    3300038: pPyramid8 1
+    3300040: pSphere2
+    3300042: pSphere2 1
+    3300044: pSphere3
+    4300000: pPyramid4
+    4300002: pPyramid8
+    4300004: pPyramid11
+    4300006: pPyramid12
+    4300008: pCube1
+    4300010: pPyramid13
+    4300012: pPyramid14
+    4300014: dianamnt
+    4300016: pCylinder1
+    4300018: pSphere2
+    4300020: pPyramid4
+    4300022: pPyramid8
+    4300024: pPyramid11
+    4300026: pPyramid12
+    4300028: pCube1
+    4300030: pPyramid13
+    4300032: pPyramid14
+    4300034: dianamnt
+    4300036: pCylinder1
+    4300038: pSphere2
+    4300040: pSphere3
+    4300042: pPlane14
+    4300044: pPlane15
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
