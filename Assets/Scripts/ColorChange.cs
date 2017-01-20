@@ -23,37 +23,37 @@ public class ColorChange : MonoBehaviour {
 	void Update(){
 		posList = Hairstylecontroller.currentPosList;
 		therealdeal = Hairstylecontroller.hairstyles[posList];
-		hairColor = therealdeal.GetComponent<Renderer> ();
+		hairColor = therealdeal.GetComponentInChildren<Renderer> ();
 	}
 		
 	public void OnClick(int number){
 		switch (number) {
 		case 0:
-			therealdeal.GetComponent<Renderer> ().material.color = red;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = red;
 			SpawnHair ();
 			break;
 		case 1:
-			therealdeal.GetComponent<Renderer> ().material.color = blue;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = blue;
 			SpawnHair ();
 			break;
 		case 2:
-			therealdeal.GetComponent<Renderer> ().material.color = blonde;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = blonde;
 			SpawnHair ();
 			break;
 		case 3:
-			therealdeal.GetComponent<Renderer> ().material.color = cyan;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = cyan;
 			SpawnHair ();
 			break;
 		case 4:
-			therealdeal.GetComponent<Renderer> ().material.color = brown;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = brown;
 			SpawnHair ();
 			break;
 		case 5:
-			therealdeal.GetComponent<Renderer> ().material.color = purple;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = purple;
 			SpawnHair ();
 			break;
 		case 6:
-			therealdeal.GetComponent<Renderer> ().material.color = pink;
+			therealdeal.GetComponentInChildren<Renderer> ().material.color = pink;
 			SpawnHair ();
 			break;
 		default:

@@ -11,7 +11,9 @@ public class UIController : MonoBehaviour {
 	private float scrollbarValue;
 	public int speed = 40;
 	public Scrollbar scrollbar;
+	public Image image;
 	private Vector3 position;
+	private Vector3 posX;
 
 	void Start () {
 		for(int i = 0; i < buttons.Count; i++){

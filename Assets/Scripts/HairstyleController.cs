@@ -20,8 +20,6 @@ public class HairstyleController : MonoBehaviour {
 	void Update () {
 		curHair.transform.rotation = headCollider.transform.rotation;
 		curHair.transform.position = new Vector3(headCollider.center.x, headCollider.center.y + 0.02f, headCollider.center.z);
-		print (headCollider.transform.localPosition.y);
-
 		if (currentPosList >= 0) {
 			if (Input.GetKeyDown (KeyCode.UpArrow)) {
 				SpawnHair ();
