@@ -15,6 +15,7 @@ public class ColorChange : MonoBehaviour {
 	public HairstyleController Hairstylecontroller;
 	private int posList;
 	private GameObject therealdeal;
+	[SerializeField]private GameObject _body;
 
 	void Start(){
 		Hairstylecontroller = Hairstylecontroller.GetComponent<HairstyleController> ();
@@ -60,6 +61,34 @@ public class ColorChange : MonoBehaviour {
 			break;
 		}
 	}
+	public void OnClickBody(int number){
+		switch (number) {
+		case 0:
+			_body.GetComponent<Renderer> ().material.color = red;
+			break;
+		case 1:
+			_body.GetComponent<Renderer> ().material.color = blue;
+			break;
+		case 2:
+			_body.GetComponent<Renderer> ().material.color = blonde;
+			break;
+		case 3:
+			_body.GetComponent<Renderer> ().material.color = cyan;
+			break;
+		case 4:
+			_body.GetComponent<Renderer> ().material.color = brown;
+			break;
+		case 5:
+			_body.GetComponent<Renderer> ().material.color = purple;
+			break;
+		case 6:
+			_body.GetComponent<Renderer> ().material.color = pink;
+			break;
+		default:
+			break;
+		}
+	}
+
 
 	void SpawnHair(){
 		Hairstylecontroller.SpawnHair ();

@@ -13,6 +13,6 @@ public class CharacterRotationInv : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.GetComponent<Rigidbody>().transform.localRotation = Quaternion.Euler (this.GetComponent<Rigidbody>().transform.position.x, Dragrotation.velocity, this.GetComponent<Rigidbody>().transform.position.z);
+		this.GetComponent<Rigidbody>().transform.localRotation = Quaternion.Euler (0, Dragrotation.velocity, this.GetComponent<Rigidbody>().transform.position.z);
 	}
 }
